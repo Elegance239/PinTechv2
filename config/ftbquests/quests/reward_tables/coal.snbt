@@ -1,0 +1,7 @@
+{
+	id: "3456319504E7699A"
+	order_index: 0
+	title: "Coal"
+	loot_size: 1
+	rewards: [{ item: "minecraft:coal", random_bonus: 5 }]
+}

@@ -1,0 +1,326 @@
+{
+	id: "7500ECF6B904D657"
+	group: ""
+	order_index: 3
+	filename: "ore_generation"
+	title: "Ore Generation"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -11.5d
+			y: 0.0d
+			subtitle: "Tired of Mining? The title of this game is \"Minecraft\"."
+			description: ["This chapter is dedicated to you, the player, who doesn't want to mine. You will be able to generate ores from renewable methods, but at a high cost of machines. "]
+			size: 2.0d
+			id: "36C1754362C26041"
+			tasks: [{
+				id: "4DAF943520E3245F"
+				type: "checkmark"
+				title: "Ore Generation"
+			}]
+		}
+		{
+			x: -6.75d
+			y: -6.0d
+			size: 1.5d
+			id: "06F2FB1113E0D08A"
+			tasks: [
+				{
+					id: "54B9906232E02452"
+					type: "checkmark"
+					title: "Iron"
+				}
+				{
+					id: "2D41F195975AB718"
+					type: "item"
+					item: "minecraft:iron_ingot"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -6.0d
+			size: 1.5d
+			id: "6A3CCC531C12F398"
+			tasks: [
+				{
+					id: "25366A6934C788CB"
+					type: "checkmark"
+					title: "Zinc"
+				}
+				{
+					id: "2F8258379F6FA56A"
+					type: "item"
+					item: "create:zinc_ingot"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			dependencies: ["6A3CCC531C12F398"]
+			size: 1.5d
+			id: "0E3268FC6F7A0651"
+			tasks: [{
+				id: "069AA4BC33BBD333"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -3.5d
+			dependencies: ["6A3CCC531C12F398"]
+			size: 1.5d
+			id: "0A74E11066200303"
+			tasks: [{
+				id: "587C9BB1B1C536C9"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			description: ["Do NOT use a traditional Cobble Generator. It will cause immense lag. An Igneous Extruder can produce cobblestone. Place lava and water next to it."]
+			dependencies: [
+				"0E3268FC6F7A0651"
+				"0A74E11066200303"
+			]
+			size: 1.5d
+			id: "012A9449C61F8789"
+			tasks: [{
+				id: "62B58313FDD3997D"
+				type: "item"
+				item: "thermal:device_rock_gen"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.75d
+			dependencies: ["012A9449C61F8789"]
+			size: 1.5d
+			id: "1775BD1F4538CB0A"
+			tasks: [{
+				id: "037B7A4C3B287F02"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.75d
+			dependencies: ["1775BD1F4538CB0A"]
+			size: 1.5d
+			id: "37BA697696B7BB03"
+			tasks: [{
+				id: "2BC8C567AD8160F6"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["37BA697696B7BB03"]
+			size: 1.5d
+			id: "193704A322237594"
+			tasks: [{
+				id: "4D8D23376580CDCB"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			dependencies: ["193704A322237594"]
+			size: 1.5d
+			id: "3FE7A119D140151D"
+			tasks: [{
+				id: "6159E52EA7B0F382"
+				type: "item"
+				item: "kubejs:dense_gravel"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.25d
+			dependencies: [
+				"3FE7A119D140151D"
+				"78A8B0E4BC94AEC7"
+			]
+			size: 1.5d
+			id: "4B5C268D3B135ACF"
+			tasks: [{
+				id: "797DEF250C826BAA"
+				type: "item"
+				item: "kubejs:wet_filtered_gravel"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.25d
+			size: 1.5d
+			id: "78A8B0E4BC94AEC7"
+			tasks: [{
+				id: "1F0E489534BDC8D4"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.25d
+			dependencies: [
+				"4B5C268D3B135ACF"
+				"0B6A1DC752AAB4A5"
+			]
+			size: 1.5d
+			id: "23D9EDA648BDA7BD"
+			tasks: [{
+				id: "4D404CD0AC9860B6"
+				type: "item"
+				item: "kubejs:clean_filtered_gravel"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 10.5d
+			dependencies: ["23D9EDA648BDA7BD"]
+			size: 1.5d
+			id: "259403FBE886C347"
+			tasks: [{
+				id: "36C72D7BE7E5E433"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 13.0d
+			dependencies: ["259403FBE886C347"]
+			size: 1.5d
+			id: "1DEEF1BD55D4EA5A"
+			tasks: [{
+				id: "25CCD26A79E7F983"
+				type: "item"
+				item: "kubejs:tarnished_zinc_nugget"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 15.5d
+			dependencies: ["1DEEF1BD55D4EA5A"]
+			size: 2.5d
+			id: "3A3ED89E289D2A05"
+			tasks: [{
+				id: "65C700F7D9F23376"
+				type: "item"
+				item: "create:zinc_nugget"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 15.5d
+			description: ["What? Nuggets can fail?"]
+			dependencies: ["1DEEF1BD55D4EA5A"]
+			size: 1.5d
+			id: "4BD4DC3F50D3A6B2"
+			tasks: [{
+				id: "4AABBA5792F3CD7B"
+				type: "item"
+				item: "kubejs:failed_zinc_nugget"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 13.0d
+			id: "0D5B010ECF8EC270"
+			tasks: [{
+				id: "1D0FE07A18FABB27"
+				type: "item"
+				item: {
+					id: "create:filter"
+					Count: 1b
+					tag: {
+						Items: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 13.0d
+			id: "713E95E765E1B49C"
+			tasks: [{
+				id: "32DD6FE6C02A7ADF"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 8.25d
+			dependencies: [
+				"1D08F01EDD62A151"
+				"1BD9596D064DBFA5"
+			]
+			size: 1.5d
+			id: "0B6A1DC752AAB4A5"
+			tasks: [{
+				id: "03BBF192BB4E321C"
+				type: "item"
+				item: "minecraft:sponge"
+			}]
+		}
+		{
+			x: 9.75d
+			y: 8.25d
+			dependencies: ["6D59D569C7F89D91"]
+			size: 1.5d
+			id: "1D08F01EDD62A151"
+			tasks: [{
+				id: "75095BA8BF3C90E9"
+				type: "item"
+				item: "kubejs:cellulose"
+			}]
+		}
+		{
+			x: 9.75d
+			y: 5.25d
+			dependencies: ["142A7A70BD57C352"]
+			size: 1.5d
+			id: "6D59D569C7F89D91"
+			tasks: [{
+				id: "4D4AC54AC8500E1D"
+				type: "item"
+				item: "minecraft:sugar"
+			}]
+		}
+		{
+			x: 9.75d
+			y: 2.25d
+			size: 1.5d
+			id: "142A7A70BD57C352"
+			tasks: [{
+				id: "350FF0FAAA2EFD37"
+				type: "item"
+				item: "minecraft:sugar_cane"
+			}]
+		}
+		{
+			x: 9.75d
+			y: 11.25d
+			size: 1.5d
+			id: "1BD9596D064DBFA5"
+			tasks: [{
+				id: "16CD3BAFE1559DA0"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

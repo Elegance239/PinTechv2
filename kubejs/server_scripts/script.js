@@ -311,14 +311,5 @@ ServerEvents.tags('item', event => {
 
 	// Get the #forge:cobblestone tag collection and remove Mossy Cobblestone from it
 	// event.get('forge:cobblestone').remove('minecraft:mossy_cobblestone')
-	event.add('ingots:tier0', 'minecraft:iron_ingot')
-	event.add('ingots:tier0', 'minecraft:gold_ingot')
-	event.add('ingots:tier0', 'minecraft:copper_ingot')
-	event.add('ingots:tier1', 'create:zinc_ingot')
-	event.add('ingots:tier2', 'thermal:tin_ingot')
-	event.add('ingots:tier2', 'thermal:silver_ingot')
-	event.add('ores:tier0', 'minecraft:raw_iron')
-	event.add('ores:tier0', 'minecraft:raw_gold')
-	event.add('ores:tier0', 'minecraft:raw_copper')
 	event.add('lychee:fire_immune', 'kubejs:cellulose')
 })

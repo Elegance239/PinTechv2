@@ -1,0 +1,11 @@
+{
+	id: "7D21EB7A4FF22B2F"
+	order_index: 1
+	title: "Random Tier 1 Ore"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:raw_gold", random_bonus: 4 }
+		{ item: "minecraft:raw_iron", random_bonus: 4 }
+		{ item: "minecraft:redstone", random_bonus: 10 }
+	]
+}

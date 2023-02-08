@@ -1,0 +1,27 @@
+{
+	id: "06b4e6b1-49c5-4daa-a4ca-64639dca937c"
+	type: "player"
+	player_name: "WhyReason"
+	ranks: {
+		06b4e6b1-49c5-4daa-a4ca-64639dca937c: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "WhyReason"
+		"ftbteams:description": ""
+		"ftbteams:color": "#59E6FF"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+		"ftbchunks:allow_explosions": 0b
+		"ftbchunks:allow_fake_players": 0b
+		"ftbchunks:allow_named_fake_players": [ ]
+		"ftbchunks:allow_fake_players_by_id": 1b
+		"ftbchunks:block_edit_mode": "allies"
+		"ftbchunks:block_interact_mode": "allies"
+		"ftbchunks:entity_interact_mode": "allies"
+		"ftbchunks:nonliving_entity_attack_mode": "allies"
+		"ftbchunks:claim_visibility": "public"
+		"ftbchunks:location_mode": "allies"
+	}
+	message_history: [ ]
+	extra: { }
+}
